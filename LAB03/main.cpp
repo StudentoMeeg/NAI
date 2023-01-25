@@ -70,19 +70,19 @@ vector<double> wyzazanie(auto function, auto dziedzina, int iterations) {
     double lowest = function(x,y);
     vector<double> results;
     
-    for (int i = 0; i < iterations; i++) {
+    for (int k = 1; k < iterations; k++) {
         double tempX = x + 0.01 * neighbours(gen);
-        double tempY = y + 0.01 * neighbours(gen);
+        double tempY = y + 0.01 * neighbours(gen);          //S(0) dla pierwszej iteracji
+        double neighbour_lowest = function(tempX, tempY);   //
         
-        double neighbour_lowest = function(tempX, tempY);
         if(neighbour_lowest < lowest) {
             x = tempX;
             y = tempY;
             lowest = neighbour_lowest;
         } else {
-            uniform_real_distribution<double> rand(0, 1);
+            uniform_real_distribution<double> rand(0, 1); //usuwanie zbyt złych wyników
             double temp = abs(neighbour_lowest - lowest);
-            double loopIter = 1.0 / i;
+            double Tk = 1.0 / k;                            //temperatura
             if (rand(gen) < exp(-1 * temp) / loopIter) {
                 x = tempX;
                 y = tempY;
