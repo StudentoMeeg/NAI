@@ -61,4 +61,4 @@ int main()
         cout << optimise(Matyas_function, dziedzina, 100000) << endl;
     }
     return 0;
-}s
+}
