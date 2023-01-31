@@ -116,7 +116,7 @@ int main()
     vector<double> dziedzina1 = {-10.0, 10.0};
     vector<double> dziedzina2 = {-2.0, 2.0};
     vector<double> dziedzina3 = {-5.0, 5.0};
-    cout << "Number of iterations is 100000." << endl << endl;
+    //cout << "Number of iterations is 100000." << endl << endl;
     clock_t start, end;
     double time_of_run;
     double avgTime = 0;
@@ -136,8 +136,7 @@ int main()
     cout << "Wyniki dla losoweProbkowanie:" << endl;
     cout << "Avg Time: " << avgTime << endl;
     cout << "Avg Lowest: " << avgLowest << endl << endl;
-    //cout << "Best X: " << wynik.at(1) << endl;
-    //cout << "Best Y: " << wynik.at(2) << endl;
+
 
     avgTime = 0;
     avgLowest =0;
@@ -155,8 +154,7 @@ int main()
     cout << "Wyniki dla wspinaczkowy:" << endl;
     cout << "Avg Time: " << avgTime << endl;
     cout << "Avg Lowest: " << avgLowest << endl << endl;
-    //cout << "Best X: " << wynik.at(1) << endl;
-    //cout << "Best Y: " << wynik.at(2) << endl;
+
 
     avgTime = 0;
     avgLowest = 0;
@@ -174,8 +172,7 @@ for (int u = 0; u < 20; u++) {
     cout << "Wyniki dla wyzazanie:" << endl;
     cout << "Avg Time: " << avgTime << endl;
     cout << "Avg Lowest: " << avgLowest << endl << endl;
-    //cout << "Best X: " << wynik.at(1) << endl;
-    //cout << "Best Y: " << wynik.at(2) << endl;
+
 
 
     return 0;

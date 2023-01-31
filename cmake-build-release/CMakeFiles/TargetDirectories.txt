@@ -1,0 +1,3 @@
+C:/Users/coret/Documents/GitHub/NAI/cmake-build-release/CMakeFiles/NAI.dir
+C:/Users/coret/Documents/GitHub/NAI/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/coret/Documents/GitHub/NAI/cmake-build-release/CMakeFiles/rebuild_cache.dir
